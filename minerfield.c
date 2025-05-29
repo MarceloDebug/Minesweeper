@@ -197,7 +197,7 @@ void showFinalBoard(int rows, int cols, int **board) {
         printf(" %2d |", i);
         for (j = 0; j < cols; j++) {
             if (board[i][j] == -1)
-                printf(" 💣");
+                printf("%3s", "X");
             else
                 printf("%3d", board[i][j]);
         }
