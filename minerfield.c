@@ -94,6 +94,7 @@ int main() {
                     if (foundMines == totalMines) {
                         printf("Congratulations, you won!!!\n");
                         showFinalBoard(rows, cols, board);
+                        hitMine = -1;
                     } else {
                         displayBoard[x][y] = '#';
                         displayBoardState(rows, cols, displayBoard);
